@@ -1,38 +1,31 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1,.nav-link{
+    font-family:'Catamaran',sans-serif
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@keyframes MoveUpDown{
+    0%, 100% {
+        bottom: 0;
+      }
+      50% {
+        top:52vh;
+      }
+}
+.arrow{
+    animation:MoveUpDown .75s ease infinite;
+}
+@media (max-width:480px){
+  .header{
+    font-size: 36px !important;
+    text-align:center !important;
+  } 
+  .arrow{
+    font-size:50px !important;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  .nav-link{
+    font-size:22px !important;
+    margin:0 .5vw !important;
+    width:25% !important;
   }
 }
