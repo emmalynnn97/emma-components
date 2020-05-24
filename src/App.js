@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
-import CoolNav from './CoolNav'
+import SingleScroll from './SingleScroll'
 function App() {
 
-  const sectionHeights = [95, 30, 85, 100];
+  const sectionHeights = [100, 90, 100, 100];
   const link = {
     backgroundColor: 'rgba(0,0,150,0)',
     fontSize: '34px',
@@ -34,13 +34,14 @@ function App() {
   const sections = {
     section1: {
       height:`${sectionHeights[0]}vh`,
-      backgroundImage: 'url("https://cosmic-s3.imgix.net/90f8d740-9c08-11ea-8035-67de785f6488-ilya-pavlov-OqtafYT5kTw-unsplash-1.jpg")',
+      backgroundImage: 'url("https://cosmic-s3.imgix.net/17fd5000-9d6b-11ea-9d0a-45b8804d1af8-georgie-cobbs-muOHbrFGEQY-unsplash.jpg")',
       overlay:{
-        height:`${sectionHeights[0]}vh`
+        height:`${sectionHeights[0]}vh`,
+        backgroundColor:'rgba(251, 215, 70,.45)'
       },
       content:{
         header:{
-          text:"Single Page Scroll Template",
+          text:"Single Page Scroll",
         }
       }
     },
@@ -87,7 +88,7 @@ function App() {
 
   return (
     <div className="App">
-      <CoolNav sectionHeights={sectionHeights} sections={sections} links={links} bgColor='' />
+      <SingleScroll sectionHeights={sectionHeights} sections={sections} links={links} bgColor='' />
     </div>
   );
 }

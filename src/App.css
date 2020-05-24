@@ -6,10 +6,10 @@ h1,.nav-link{
 }
 @keyframes MoveUpDown{
     0%, 100% {
-        bottom: 0;
+        top:-7.5vh;
       }
       50% {
-        top:52vh;
+        top:-5vh;
       }
 }
 .arrow{

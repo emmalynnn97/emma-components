@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export class CoolNav extends Component {
+export class SingleScroll extends Component {
     constructor(props) {
         super(props)
 
@@ -26,7 +26,6 @@ export class CoolNav extends Component {
                     textAlign: 'center'
                 },
                 overlay: {
-                  backgroundColor: 'rgba(50,50,125,.7)',
                   position: 'absolute',
                   top: '0',
                   left: '0',
@@ -43,8 +42,8 @@ export class CoolNav extends Component {
                   textTransform: 'uppercase',
                   fontWeight: '900',
                   textShadow: '2px 2px 4px black',
-                  position: 'absolute',
-                  top: '50vh',
+                  position: 'relative',
+                  top: '-7.5vh',
                 },
                 content: {
                     text: ""
@@ -191,4 +190,4 @@ export class CoolNav extends Component {
     }
 }
 
-export default CoolNav
+export default SingleScroll
