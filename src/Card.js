@@ -7,14 +7,14 @@ export class Card extends Component {
              image:this.props.image,
              content:this.props.content,
              bgColor:this.props.bgColor,
-             texture:this.props.texture
+             texture:this.props.texture,
         }
     }
     
     render() {
         const cardStyle={
-            height:'45vw',
-            width:'35%',
+            height:'45vh',
+            width:'33%',
             boxShadow:`0 2.8px 2.2px rgba(0, 0, 0, 0.034),
             0 6.7px 5.3px rgba(0, 0, 0, 0.048),
             0 12.5px 10px rgba(0, 0, 0, 0.06),
@@ -23,6 +23,10 @@ export class Card extends Component {
             0 100px 80px rgba(0, 0, 0, 0.12)`,
             margin:'0 1vw',
             maxHeight:'550px',
+            minHeight:'425px',
+            maxWidth:'400px',
+            transition:'.15s ease',
+           
         }
         const cardHeaderStyle={
             backgroundSize:'cover',

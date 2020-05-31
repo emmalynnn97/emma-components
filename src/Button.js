@@ -24,11 +24,11 @@ export class Button extends Component {
             alignItems:'center',
             textAlign:'center',
             color:this.state.color,
-            backgroundColor:this.state.bgColor,
+            background:this.state.bgColor,
             border:`2px solid ${this.state.bgColor}`,
             boxShadow:this.state.shadow,
             transform:this.state.transform,
-            transition:'.15s ease',
+            transition:'.25s ease',
             cursor:'pointer'
         }
         return (
@@ -37,7 +37,7 @@ export class Button extends Component {
                 this.setState({
                     bgColor:this.props.color,
                     color:this.props.bgColor,
-                    shadow:'0px 15px 20px rgba(0, 0, 115, 0.4)',
+                    shadow:'0px 15px 20px rgba(0, 0, 0, 0.4)',
                     transform:'translateY(-7px)'
                 })
             }}

@@ -8,6 +8,7 @@ export class FullWidth extends Component {
              image:this.props.image,
              content:this.props.content,
              height:this.props.height,
+             bgColor:this.props.bgColor
         }
     }
     
@@ -18,8 +19,12 @@ export class FullWidth extends Component {
             backgroundImage:`url("${this.state.image}")`,
             backgroundSize:'cover',
             backgroundPosition:'center',
+            background:this.state.bgColor,
+            display:'flex',
+            justifyContent:'center',
+            alignItems:'center',
             minHeight:'200px',
-            maxHeight:'400px'
+            maxHeight:'400px',
         }
         return (
             <div style={fullWidthStyle}>
