@@ -1,9 +1,10 @@
 import React from 'react';
 import './App.css';
-import SingleScroll from './SingleScroll'
+import AgencyTemplate from './AgencyTemplate'
+//import SingleScroll from './SingleScroll'
 function App() {
 
-  const sectionHeights = [100, 90, 100, 100];
+  /*const sectionHeights = [100, 90, 100, 100];
   const link = {
     backgroundColor: 'rgba(0,0,150,0)',
     fontSize: '34px',
@@ -84,11 +85,12 @@ function App() {
         }
       }
     }
-  }
+  }*/
 
   return (
     <div className="App">
-      <SingleScroll sectionHeights={sectionHeights} sections={sections} links={links} bgColor='' />
+      <AgencyTemplate/>
+      {/*<SingleScroll sectionHeights={sectionHeights} sections={sections} links={links} bgColor='' />*/}
     </div>
   );
 }
