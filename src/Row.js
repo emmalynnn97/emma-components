@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export class FullWidth extends Component {
+export class Row extends Component {
     constructor(props) {
         super(props)
     
@@ -13,7 +13,7 @@ export class FullWidth extends Component {
     }
     
     render() {
-        const fullWidthStyle={
+        const rowStyle={
             height:this.state.height,
             width:'100%',
             backgroundImage:`url("${this.state.image}")`,
@@ -21,17 +21,19 @@ export class FullWidth extends Component {
             backgroundPosition:'center',
             background:this.state.bgColor,
             display:'flex',
-            justifyContent:'center',
+            justifyContent:'space-evenly',
             alignItems:'center',
             minHeight:'200px',
             maxHeight:'400px',
+            padding:'50px 0px',
+            margin:'.25vh 0'
         }
         return (
-            <div style={fullWidthStyle}>
+            <div style={rowStyle}>
                 {this.state.content}
             </div>
         )
     }
 }
 
-export default FullWidth
+export default Row

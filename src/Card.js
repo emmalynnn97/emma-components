@@ -13,8 +13,8 @@ export class Card extends Component {
     
     render() {
         const cardStyle={
-            height:'45vh',
-            width:'33%',
+            height:'375px',
+            width:'33.333%',
             boxShadow:`0 2.8px 2.2px rgba(0, 0, 0, 0.034),
             0 6.7px 5.3px rgba(0, 0, 0, 0.048),
             0 12.5px 10px rgba(0, 0, 0, 0.06),
@@ -22,8 +22,8 @@ export class Card extends Component {
             0 41.8px 33.4px rgba(0, 0, 0, 0.086),
             0 100px 80px rgba(0, 0, 0, 0.12)`,
             margin:'0 1vw',
-            maxHeight:'550px',
-            minHeight:'425px',
+            maxHeight:'450px',
+            minHeight:'350px',
             maxWidth:'400px',
             transition:'.15s ease',
            

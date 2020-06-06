@@ -20,7 +20,8 @@ export class Hero extends Component {
                 minHeight:'250px',
                 backgroundSize:'cover',
                 backgroundImage:`url("${this.state.image}")`,
-                backgroundAttachment:'fixed'
+                backgroundAttachment:'fixed',
+                marginTop:'90px'
             }
         }
         else{
@@ -30,7 +31,8 @@ export class Hero extends Component {
                 minHeight:'250px',
                 backgroundSize:'cover',
                 backgroundImage:`url("${this.state.image}")`,
-                backgroundPosition:'center'
+                backgroundPosition:'center',
+                marginTop:'90px'
             }
         }
          

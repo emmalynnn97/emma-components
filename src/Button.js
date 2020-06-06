@@ -9,6 +9,7 @@ export class Button extends Component {
              color:this.props.color,
              shadow:this.props.shadow,
              transform:this.props.transform,
+             content:this.props.content
         }
     }
     
@@ -50,7 +51,7 @@ export class Button extends Component {
                 })
             }}
             style={buttonStyle}>
-                Click Me
+                {this.state.content}
             </div>
         )
     }
