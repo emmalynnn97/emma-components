@@ -11,8 +11,8 @@ const links = [
     'Link 3',
     'Link 4',
 ]
-export const nav = ()=>
+export const fixedNavBar = ()=>
 <>
-<Nav links={links} bgColor='salmon'/>
+<Nav height='100px' links={links} bgColor='salmon'/>
 <div style={{height:'200vh'}}></div>
     </>

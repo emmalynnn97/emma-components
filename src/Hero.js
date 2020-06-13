@@ -7,7 +7,9 @@ export class Hero extends Component {
         this.state = {
              image:this.props.image,
              parallax:this.props.parallax,
-             height:this.props.height
+             height:this.props.height,
+             overlayColor:this.props.overlayColor,
+             content:this.props.content
         }
     }
     
@@ -21,7 +23,7 @@ export class Hero extends Component {
                 backgroundSize:'cover',
                 backgroundImage:`url("${this.state.image}")`,
                 backgroundAttachment:'fixed',
-                marginTop:'90px'
+                backgroundPosition:'bottom',
             }
         }
         else{
@@ -32,13 +34,12 @@ export class Hero extends Component {
                 backgroundSize:'cover',
                 backgroundImage:`url("${this.state.image}")`,
                 backgroundPosition:'center',
-                marginTop:'90px'
             }
         }
          
         return (
-            <div style={heroStyle}>
-                <Overlay bgColor='rgba(0,0,80,.4)'/>
+            <div className='hero' style={heroStyle}>
+                <Overlay content={this.state.content} bgColor={this.state.overlayColor}/>
             </div>
         )
     }

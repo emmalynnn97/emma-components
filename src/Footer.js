@@ -20,14 +20,15 @@ export class Footer extends Component {
             left:'0',
             display:'flex',
             justifyContent:'center',
-            alignItems:'center'
+            alignItems:'center',
+            zIndex:'2'
         }
         const contentStyle={
             display:'flex',
-            justifyContent:'space-between',
+            justifyContent:'center',
             alignItems:'center',
             minWidth:'275px',
-            width:'25%',
+            width:'50%',
             color:'white',
             height:'50px'
         }

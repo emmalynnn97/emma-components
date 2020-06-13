@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import AgencyTemplate from './AgencyTemplate'
+import Template from './Template'
 //import SingleScroll from './SingleScroll'
 function App() {
 
@@ -86,11 +86,12 @@ function App() {
       }
     }
   }*/
+  
+
 
   return (
     <div className="App">
-      <AgencyTemplate/>
-      {/*<SingleScroll sectionHeights={sectionHeights} sections={sections} links={links} bgColor='' />*/}
+    <Template/>
     </div>
   );
 }

@@ -5,7 +5,7 @@ export default {
     component:Row
 };
 
-export const row = ()=><Row content={<>
+export const rowNewsletter = ()=><Row content={<>
 <div>
     <h2 style={{color:'white'}}>
         Join Our Newsletter
@@ -19,9 +19,9 @@ export const row = ()=><Row content={<>
         padding:'5px'
         }} type="email" name="email" value='Email Address' placeholder="Email Address"/>
 </div>
-</>} bgColor='linear-gradient(90deg, rgb(230,100,150), rgb(225,175,0))' height='15vw' />
+</>} bgColor='linear-gradient(90deg, rgb(230,100,150), rgb(225,175,0))' height='15vh' />
 
-export const row2 = ()=><>
+export const rowPhotos = ()=><>
 <Row content={
 <>  
         <h2 style={{color:'white',letterSpacing:'1.5px'}}>
