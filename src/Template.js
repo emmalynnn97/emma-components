@@ -39,7 +39,7 @@ export class Template extends Component {
         <div style={{
             height:'100%',
             width:'100%',
-            backgroundImage:'url("https://imgix.cosmicjs.com/9e7a0e20-8f56-11ea-b24f-a9066b5dde94-Screen-Shot-2020-04-23-at-3.22.46-PM.png")',
+            backgroundImage:'url("https://imgix.cosmicjs.com/6561a430-ad9d-11ea-8ffe-4bdcca0409c6-Screen-Shot-2020-06-13-at-10.41.49-AM.png")',
             backgroundSize:'cover',
             backgroundPosition:'center'
         }}></div>
