@@ -12,6 +12,10 @@ h1{
 h2{
   font-size:32px;
 }
+.next-button:hover,.prev-button:hover{
+  color:rgb(0,0,20) !important;
+  background-color:inherit !important;
+}
 @keyframes MoveUpDown{
     0%, 100% {
         top:-7.5vh;
