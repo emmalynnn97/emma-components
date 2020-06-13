@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Hero from './Hero'
 import SlideUp from './SlideUp'
+import SlideIn from './SlideIn'
 import Footer from './Footer'
 export class Template extends Component {
     constructor(props) {
@@ -47,7 +48,8 @@ export class Template extends Component {
             <div>
                 <Hero content={heroContent} overlayColor='rgba(0,0,70,.2)' height='87.5vh' parallax={true} image='https://imgix.cosmicjs.com/ebe9b000-ad49-11ea-8ffe-4bdcca0409c6-background-bloom-blooming-blossom-583850.jpg'/>
                 <SlideUp slides={slides} />
-                <Footer content={<><h2 style={{margin:'0 2.5vw'}}>Emma Lynn Web Development</h2><a rel="noopener noreferrer" target="_blank" href="https://github.com/emmalynnn97"><img src="https://cosmic-s3.imgix.net/4ae87a70-a3b1-11ea-8370-b9ea0c50cbb0-GitHub-Mark-Light-32px.png" alt="github logo" /></a></>} bgColor='linear-gradient(35deg,rgba(0,0,20,.5),rgb(15,0,80))'/>
+                <SlideIn/>
+                <Footer content={<><h2 style={{margin:'0 2.5vw',color:'white'}}>Emma Lynn Web Development</h2><a rel="noopener noreferrer" target="_blank" href="https://github.com/emmalynnn97"><img src="https://cosmic-s3.imgix.net/4ae87a70-a3b1-11ea-8370-b9ea0c50cbb0-GitHub-Mark-Light-32px.png" alt="github logo" /></a></>} bgColor='linear-gradient(180deg,rgba(15,0,80,1),rgba(15,0,80) )'/>
             </div>
         )
     }
