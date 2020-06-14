@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Overlay from './Overlay'
+
 export class Hero extends Component {
     constructor(props) {
         super(props)
@@ -36,10 +37,9 @@ export class Hero extends Component {
                 backgroundPosition:'center',
             }
         }
-         
         return (
             <div className='hero' style={heroStyle}>
-                <Overlay content={this.state.content} bgColor={this.state.overlayColor}/>
+                <Overlay isDynamic={true} content={this.state.content} bgColor={this.state.overlayColor}/>
             </div>
         )
     }
