@@ -9,15 +9,15 @@ export class Template extends Component {
         super(props)
     
         this.state = {
-            
+       
         }
     }
-    
+   
     render() {
         const heroContent = <>
         <div style={{
             marginLeft:'7vw',
-            lineHeight:'1.5'
+            lineHeight:'1.5',
         }}>
         <h1>Hi, my name is Emma Lynn &#9825; <br/>I develop and design websites</h1>
         </div>
@@ -47,9 +47,10 @@ export class Template extends Component {
     ]
         return (
             <div>
-                <Hero content={heroContent} overlayColor='rgba(0,0,70,.2)' height='87.5vh' parallax={true} image='https://imgix.cosmicjs.com/ebe9b000-ad49-11ea-8ffe-4bdcca0409c6-background-bloom-blooming-blossom-583850.jpg'/>
+                <Hero content={heroContent} overlayColor='rgba(0,0,70,.2)' height='85vh' parallax={true} image='https://imgix.cosmicjs.com/ebe9b000-ad49-11ea-8ffe-4bdcca0409c6-background-bloom-blooming-blossom-583850.jpg'/>
                 <SlideUp slides={slides} />
                 <SlideIn/>
+                <div style={{height:'500px',backgroundColor:'rgb(0,0,70)'}}></div>
                 <Footer content={<><h2 style={{margin:'0 2.5vw',color:'white'}}>Emma Lynn Web Development</h2><a rel="noopener noreferrer" target="_blank" href="https://github.com/emmalynnn97"><img src="https://cosmic-s3.imgix.net/4ae87a70-a3b1-11ea-8370-b9ea0c50cbb0-GitHub-Mark-Light-32px.png" alt="github logo" /></a></>} bgColor='linear-gradient(180deg,rgba(15,0,80,1),rgba(15,0,80) )'/>
             </div>
         )

@@ -12,10 +12,8 @@ h1{
 h2{
   font-size:32px;
 }
-.next-button:hover,.prev-button:hover{
-  color:rgb(0,0,20) !important;
-  background-color:inherit !important;
-}
+
+
 @keyframes MoveUpDown{
     0%, 100% {
         top:-7.5vh;
@@ -24,8 +22,20 @@ h2{
         top:-5vh;
       }
 }
+
 .arrow{
     animation:MoveUpDown .75s ease infinite;
+}
+@keyframes MoveUpDown2{
+  0%, 100% {
+      top:0;
+    }
+    50% {
+      top:-15px;
+    }
+}
+.arrow-2{
+  animation:MoveUpDown2 .75s ease infinite;
 }
 @media (max-width:480px){
   h1{

@@ -10,7 +10,9 @@ export class Hero extends Component {
              parallax:this.props.parallax,
              height:this.props.height,
              overlayColor:this.props.overlayColor,
-             content:this.props.content
+             content:this.props.content,
+             hRotation:0,
+             transition:5
         }
     }
     
@@ -19,26 +21,28 @@ export class Hero extends Component {
         if(this.state.parallax){
             heroStyle = {
                 height:this.state.height,
-                maxHeight:'750px',
                 minHeight:'250px',
                 backgroundSize:'cover',
                 backgroundImage:`url("${this.state.image}")`,
                 backgroundAttachment:'fixed',
                 backgroundPosition:'bottom',
+                filter:`hue-rotate(${this.state.hRotation}deg)`,
+                transition:`${this.state.transition}s linear`
             }
         }
         else{
             heroStyle = {
                 height:this.state.height,
-                maxHeight:'750px',
                 minHeight:'250px',
                 backgroundSize:'cover',
                 backgroundImage:`url("${this.state.image}")`,
                 backgroundPosition:'center',
+                filter:`hue-rotate(${this.state.hRotation}deg)`,
+                transition:`${this.state.transition}s linear`
             }
         }
         return (
-            <div className='hero' style={heroStyle}>
+            <div onMouseLeave={()=>{this.setState({hRotation:-120,transition:5})}} onMouseEnter={()=>{this.setState({hRotation:0,transition:2})}} className='hero' style={heroStyle}>
                 <Overlay isDynamic={true} content={this.state.content} bgColor={this.state.overlayColor}/>
             </div>
         )

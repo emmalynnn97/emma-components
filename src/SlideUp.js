@@ -52,7 +52,7 @@ export class SlideUp extends Component {
             overflowY: 'hidden',
             maxWidth:'1800px'
         }
-        const contentStyle = {
+        const containerStyle = {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
@@ -60,9 +60,25 @@ export class SlideUp extends Component {
             width: '100%',
             backgroundColor: 'rgba(0,0,70,.2)'
         }
+        const arrowStyle={
+            margin:'0',
+            color:'white',
+            fontSize:'50px',
+            cursor:'pointer',
+            position:'relative',
+        }
+        const headingStyle={
+            display:'flex',
+            flexDirection:'column',
+            alignItems:'center'
+        }
         return (
-            <div style={contentStyle} className='slide-up-container'>
-                    <h2>Recent Projects</h2>
+            <div style={containerStyle} className='slide-up-container'>
+                   <div style={headingStyle}> <h2 style={{margin:'0'}}>Recent Projects</h2>
+                    <p onClick={()=>{
+                        window.scrollTo({ top: window.innerHeight/1.25, behavior: 'smooth' });
+                    }} className='arrow-2' style={arrowStyle}>&#8964;</p>
+                    </div>
                     <div className='slide-container' style={slideContainerStyle}>
                         {this.state.slides.map(slide => <div className='slide-up' style={slideUpStyle}>{slide}</div>)}
                     </div>
